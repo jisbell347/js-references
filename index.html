@@ -79,11 +79,14 @@
 
     const dev = Object.assign({}, joe);
     dev.name = 'Joseph';
-    dev.social = ''
 
     console.clear();
     console.log(joe);
     console.log(dev);
+
+    const dev2 = JSON.parse(JSON.stringify(joe));
+    dev2.social.twitter = '@baldguy';
+    console.log(dev2);
   </script>
 
 </body>
